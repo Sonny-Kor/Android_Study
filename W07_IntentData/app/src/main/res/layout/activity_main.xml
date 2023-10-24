@@ -4,27 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ff0"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/card1"
-        android:layout_width="100dp"
-        android:layout_height="0dp"
-        android:src="@drawable/c_7_of_spades"
-        android:contentDescription="c_7_of_spades"
-        app:layout_constraintBottom_toTopOf="@id/btn_shuffle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_shuffle"
-        android:layout_margin="8dp"
-        android:text="Good Luck"
-        app:layout_constraintTop_toBottomOf="@id/card1"
+        android:id="@+id/btnMountain"
+        android:text="산"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnSea"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSea"
+        android:text="바다"
+        app:layout_constraintTop_toBottomOf="@id/btnMountain"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
