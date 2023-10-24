@@ -1,6 +1,8 @@
-# Android_App_Learn
+#Android_App_Learn
  
-1. HelloWorld 출력
-2. Counter 만들기
-3. 로또 만들기
-4. 카드 딜러 만들기
+W01. HelloWorld output
+W02. Create Counter
+W03. Make a Lotto
+W04. Creating a card dealer (hand determination and simulation)
+W06. Intend Study
+W07. Push IntendData
