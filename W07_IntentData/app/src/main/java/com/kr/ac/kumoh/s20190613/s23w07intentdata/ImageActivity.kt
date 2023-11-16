@@ -35,6 +35,7 @@ class ImageActivity : AppCompatActivity(), View.OnClickListener {
         main.btnDislike.setOnClickListener(this)
     }
 
+
     override fun onClick(p0: View?) {
         val intent = Intent()
         val value = when (p0?.id) {
@@ -42,9 +43,10 @@ class ImageActivity : AppCompatActivity(), View.OnClickListener {
             main.btnDislike.id -> DISLIKE
             else -> NONE
         }
+
         intent.putExtra(IMAGE_NAME, getKeyName)
         intent.putExtra(IMAGE_RESULT, value)
         setResult(RESULT_OK, intent)
-        finish()
+        finish() // 엑티비티 종료
     }
 }

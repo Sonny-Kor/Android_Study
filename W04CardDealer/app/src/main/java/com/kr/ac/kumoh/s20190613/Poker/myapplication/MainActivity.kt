@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
     private fun updateCardImage(cards: IntArray){
         val res = IntArray(5)
         for (i in res.indices) {
-            res[i] = resources.getIdentifier(
+            res[i] = resources.  (
                 getCardName(cards[i]),
                 "drawable",
                 packageName

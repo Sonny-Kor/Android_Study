@@ -26,7 +26,6 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         main.btnSea.setOnClickListener(this)
         main.btnMountain.setOnClickListener(this)
     }
-
     private val startForResult = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ) {
@@ -64,7 +63,8 @@ class MainActivity : AppCompatActivity(), OnClickListener {
             else -> return
         }
         intent.putExtra(KEY_NAME, value)
-        //startActivity(intent)
+//        startActivity(intent)
+
         startForResult.launch(intent)
     }
 }
